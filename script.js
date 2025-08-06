@@ -1,7 +1,7 @@
 // script.js
 
 // Configuration
-const API_BASE_URL = 'mongodb://atlas-sql-68907be15ef99a38c3ae3759-slfc8z.a.query.mongodb.net/myVirtualDatabase?ssl=true&authSource=admin';
+const API_BASE_URL = 'https://backend-api-vqyz.onrender.com/api';
 
 // State management
 let currentUser = null;
@@ -365,4 +365,5 @@ function showSuccess(message) {
 
 // Make functions globally available for onclick handlers
 window.toggleProductStatus = toggleProductStatus;
+
 window.deleteProduct = deleteProduct;
