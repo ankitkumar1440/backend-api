@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amul Arwal - E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Home Page -->
+    <div id="homePage" class="page active">
+        <header>
+            <div class="logo">Amul<span class="subtitle"> ,Arwal</span></div>
+            <div class="nav-buttons">
+                <button id="adminBtn" class="nav-btn">Admin</button>
+                <button id="loginBtn" class="nav-btn">Login</button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="search-container">
+                <h1>Our Products</h1>
+                <a href="image.png">Icecream Chart</a>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search product">
+                    <button id="searchBtn">🔍</button>
+                </div>
+            </div>
+            
+            <div id="productsGrid" class="products-grid">
+                <!-- Products will be loaded here -->
+            </div>
+        </main>
+        
+        <footer>
+            <p>Address: Amul Dairy, Near Arwal Block, Arwal, Bihar, 804426</p>
+            <p class="ownername">Owned by Jitendra Prasad Singh
+                <br>© Copyright 2025
+            </p>
+        </footer>
+    </div>
+
+    <!-- Login Page -->
+    <div id="loginPage" class="page">
+        <header>
+            <div class="logo">Amul<span class="subtitle">Arwal</span></div>
+            <div class="nav-buttons">
+                <button id="backToHomeBtn" class="nav-btn">Back</button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="login-container">
+                <form id="loginForm" class="login-form">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit" class="login-submit">Login</button>
+                </form>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Login Page</p>
+        </footer>
+    </div>
+
+    <!-- Admin Page -->
+    <div id="adminPage" class="page">
+        <header>
+            <div class="logo">Amul<span class="subtitle">Arwal</span></div>
+            <div class="nav-buttons">
+                <button id="homeBtn" class="nav-btn">Home</button>
+                <button id="logoutBtn" class="nav-btn">Logout</button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="admin-container">
+                <div class="add-product-section">
+                    <form id="addProductForm" class="add-product-form">
+                        <input type="text" id="productName" placeholder="Product Name" required>
+                        <input type="number" id="productPrice" placeholder="Price" step="0.01" required>
+                        <div class="file-upload">
+                            <input type="file" id="productImage" accept="image/*" style="display: none;">
+                            <button type="button" id="chooseFileBtn" class="choose-file-btn">Choose file</button>
+                            <span id="fileName">Upload Image</span>
+                        </div>
+                        <button type="submit" class="add-product-btn">Add Product</button>
+                    </form>
+                </div>
+                
+                <div id="adminProductsGrid" class="admin-products-grid">
+                    <!-- Admin products will be loaded here -->
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Admin Page</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
