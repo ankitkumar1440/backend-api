@@ -11,7 +11,7 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 10000;
 
 // Create uploads directory if it doesn't exist
 const uploadsDir = path.join(__dirname, 'uploads');
@@ -477,5 +477,6 @@ app.listen(PORT, async () => {
         initializeAdmin();
     }, 1000);
 });
+
 
 module.exports = app;
